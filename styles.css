@@ -1,46 +1,43 @@
-body { 
-    display: grid;
-    grid-template-areas: 
-      "header header header"
-      "article nav ads"
-      "footer footer footer";
-    grid-template-rows: 80px 1fr 70px;  
-    grid-template-columns: 1fr 20% 15%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); 
-    }  
-  header, footer, article, nav, div {
-    padding: 1.2em;
-    background: gold;
-    }
-  #pageHeader {
-    grid-area: header;
-    }
-  #pageFooter {
-    grid-area: footer;
-    }
-  #mainArticle { 
-    grid-area: article;      
-    }
-  #mainNav { 
-    grid-area: nav; 
-    }
-  #siteAds { 
-    grid-area: ads; 
-    } 
-  /* Stack the layout on small devices/viewports. */
-  @media all and (max-width: 575px) {
-    body { 
-      grid-template-areas: 
-        "header"
-        "article"
-        "ads"
-        "nav"
-        "footer";
-      grid-template-rows: 80px 1fr 70px 1fr 70px;  
-      grid-template-columns: 1fr;
-   }
-  }
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+/* Generic styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bangers', cursive;
+  text-align: center;
+}
+#figure{
+  text-align: center;
+}
+
+.body{
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8); 
+}
+
+h1, h2 {
+  letter-spacing: 0.1em;  
+}
+
+h3 {
+  letter-spacing: 0.2em; 
+  text-align: center; 
+}
+
+ul{
+  list-style-type: none;
+}
+/* footer */
+.footer {
+  background-color: #4a042a;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
